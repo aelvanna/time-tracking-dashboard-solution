@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="/src/main.css" rel="stylesheet">
+  <script type="module" src="/src/main.js"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body
+  class="box-border min-h-screen bg-navy-950 font-rubik text-white font-light z-0 flex flex-col items-center justify-center">
+  <main class="container py-12 px-6 grid grid-cols-1 auto-rows-auto gap-5">
+    <article class="relative">
+      <header class="relative z-10 grid grid-cols-[auto,1fr] gap-x-4 bg-purple-600 rounded-2xl p-6">
+        <img
+          class="col-start-1 row-start-1 row-end-3 border-solid border-white border-3 rounded-full self-center w-18 h-18"
+          src="/images/image-jeremy.png" alt="Profile Picture of Jeremy Robson" />
+        <h4 class="col-start-2 text-md text-navy-200 font-normal">Report for</h4>
+        <h1 class="col-start-2 text-2xl font-light">Jeremy Robson</h1>
+      </header>
+      <nav class="text-lg text-purple-500 flex flex-row justify-between bg-navy-900 rounded-2xl -mt-4 px-6 pb-6 pt-10">
+        <a href="#">Daily</a>
+        <a href="#" class="font-light text-white">Weekly</a>
+        <a href="#">Monthly</a>
+      </nav>
+    </article>
+    <article class="relative">
+      <header
+        class="w-full h-[3.25rem] z-1 bg-orange-300 bg-[url(/images/icon-work.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl">
+        <!-- Header Image -->
+      </header>
+      <section
+        class="grid grid-cols-2 grid-rows-auto relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1rem_top_2rem] rounded-2xl">
+        <h4 class="text-lg font-medium">Work</h4>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- daily -->
+          5hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- daily -->
+          <span class="time-category">Previous</span> - 7hrs
+        </p>
+        <p class="col-start-1 text-3xl">
+          <!-- weekly -->
+          32hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end">
+          <!-- weekly -->
+          <span class="time-category">Previous</span> - 36hrs
+        </p>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- monthly -->
+          103hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- monthly -->
+          <span class="time-category">Previous</span> - 128hrs
+        </p>
+      </section>
+    </article>
+    <article class="relative">
+      <header
+        class="w-full h-[3.25rem] z-1 bg-blue-300 bg-[url(/images/icon-play.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl">
+        <!-- Header Image -->
+      </header>
+      <section
+        class="grid grid-cols-2 grid-rows-auto relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1rem_top_2rem] rounded-2xl">
+        <h4 class="text-lg font-medium">Play</h4>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- daily -->
+          1hr
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- daily -->
+          <span class="time-category">Previous</span> - 2hrs
+        </p>
+        <p class="col-start-1 text-3xl">
+          <!-- weekly -->
+          10hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end">
+          <!-- weekly -->
+          <span class="time-category"> Previous</span> - 8hrs
+        </p>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- monthly -->
+          23hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- monthly -->
+          <span class_id="card__monthly-hours--previous-23hrs">
+            <span class="time-category">Previous</span> - 29hrs
+        </p>
+      </section>
+      </header>
+    </article>
+    <article class="relative">
+      <header
+        class="w-full h-[3.25rem] z-1 bg-pink-400 bg-[url(/images/icon-study.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl">
+        <!-- Header Image -->
+      </header>
+      <section
+        class="grid grid-cols-2 grid-rows-auto relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1rem_top_2rem] rounded-2xl">
+        <h4 class="text-lg font-medium">Study</h4>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- daily -->
+          0hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- daily -->
+          <span class="time-category">Previous</span> - 1hr
+        </p>
+        <p class="col-start-1 text-3xl">
+          <!-- weekly -->
+          4hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end">
+          <!-- weekly -->
+          <span class="time-category">Previous</span> - 7hrs
+        </p>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- monthly -->
+          13hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- monthly -->
+          <span class="time-category">Previous</span> - 19hrs
+        </p>
+      </section>
+    </article>
+    <article class="relative">
+      <header
+        class="w-full h-[3.25rem] z-1 bg-green-400 bg-[url(/images/icon-exercise.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl">
+        <!-- Header Image -->
+      </header>
+      <section
+        class="grid grid-cols-2 grid-rows-auto relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1rem_top_2rem] rounded-2xl">
+        <h4 class="text-lg font-medium">Exercise</h4>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- daily -->
+          1hr
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- daily -->
+          <span class="time-category">Previous</span> - 1hr
+        </p>
+        <p class="col-start-1 text-3xl">
+          <!-- weekly -->
+          4hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end">
+          <!-- weekly -->
+          <span class="time-category">Previous</span> - 5hrs
+        </p>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- monthly -->
+          11hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- monthly -->
+          <span class="time-category">Previous</span> - 18hrs
+        </p>
+      </section>
+    </article>
+    <article class="relative">
+      <header
+        class="w-full h-[3.25rem] z-1 bg-purple-700 bg-[url(/images/icon-social.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl">
+        <!-- Header Image-->
+      </header>
+      <section
+        class="grid grid-cols-2 grid-rows-auto relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1rem_top_2rem] rounded-2xl">
+        <h4 class="text-lg font-medium">Social</h4>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- daily -->
+          1hr
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- daily -->
+          <span class="time-category">Previous</span> - 3hrs
+        </p>
+        <p class="col-start-1 text-3xl">
+          <!-- weekly -->
+          5hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end">
+          <!-- weekly -->
+          <span class="time-category">Previous</span> - 10hrs
+        </p>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- monthly -->
+          21hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- monthly -->
+          <span class="time-category">Previous</span> - 23hrs
+        </p>
+      </section>
+    </article>
+    <article class="relative">
+      <header
+        class="w-full h-[3.25rem] z-1 bg-yellow-300 bg-[url(/images/icon-self-care.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl">
+        <!-- Header Image -->
+      </header>
+      <section
+        class="grid grid-cols-2 grid-rows-auto relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1rem_top_2rem] rounded-2xl">
+        <h4 class="text-lg font-medium">Self Care</h4>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- daily -->
+          0hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- daily -->
+          <span class="time-category">Previous</span> - 1hr
+        </p>
+        <p class="col-start-1 text-3xl">
+          <!-- weekly -->
+          2hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end">
+          <!-- weekly -->
+          <span class="time-category">Previous</span> - 2hrs
+        </p>
+        <p class="col-start-1 text-3xl hidden">
+          <!-- monthly -->
+          7hrs
+        </p>
+        <p class="col-start-2 row-start-2 place-content-center text-sm text-navy-200 justify-self-end hidden">
+          <!-- monthly -->
+          <span class="time-category">Previous</span> - 11hrs
+        </p>
+      </section>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/l-m-dev">Luis Martinez</a>.
+  </footer>
+</body>
+
+</html>
