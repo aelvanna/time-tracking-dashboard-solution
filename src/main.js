@@ -74,16 +74,14 @@ const populateDOM = (data, selectedTimeframe) => {
 /* Use fetch to retrieve data from .json */
 fetch(jsonData)
   .then((response) => {
-    if (!response.ok) return console.log("Something has happened.");
-
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     return response.json();
   })
   .then((data) => {
-    // Store data globally or pass it around
-    window.timeTrackingData = data;
-
     // Initial population with weekly data
-    populateDOM(window.timeTrackingData, "weekly");
+    populateDOM(data, "weekly");
 
     // Add event listeners to navigation links
     const navLinks = document.querySelectorAll(".card__nav a");
@@ -91,7 +89,7 @@ fetch(jsonData)
       link.addEventListener("click", (e) => {
         e.preventDefault();
         const timeframe = e.target.textContent.toLowerCase();
-        populateDOM(window.timeTrackingData, timeframe);
+        populateDOM(data, timeframe);
 
         // Update active link styling
         navLinks.forEach((navLink) => {
@@ -102,4 +100,7 @@ fetch(jsonData)
         e.target.classList.add("font-light", "text-white");
       });
     });
+  })
+  .catch((e) => {
+    console.error("There was a problem with the fetch operation:", e);
   });
