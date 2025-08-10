@@ -4,7 +4,7 @@ import "./main.css";
  * Filename and location of the JSON data to import.
  * @type {string}
  */
-const jsonData = "/src/data.json";
+const jsonData = "/data.json";
 
 /**
  * Maps activity titles from the data to the base class names used in the HTML.
