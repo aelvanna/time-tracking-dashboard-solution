@@ -1,10 +1,17 @@
 import "./main.css";
 
-/* filename and location of .json data to import */
+/**
+ * Filename and location of the JSON data to import.
+ * @type {string}
+ */
 const jsonData = "./data.json";
 
-// Map for activity titles to base class names
+/**
+ * Maps activity titles from the data to the base class names used in the HTML.
+ * @type {Map<string, string>}
+ */
 const titleToClassBaseMap = new Map([
+  // [title, baseClassName] /*
   ["Work", "work"],
   ["Study", "study"],
   ["Exercise", "exercise"],
@@ -13,9 +20,16 @@ const titleToClassBaseMap = new Map([
   ["Self Care", "self-care"],
 ]);
 
-// Add markup for each item
+/**
+ * Updates the text content of a single data element in the DOM.
+ * @param {object} item - The activity data object (e.g., { title: "Work", timeframes: {...} }).
+ * @param {string} timeframeType - The selected timeframe ('daily', 'weekly', 'monthly').
+ * @param {'current' | 'previous'} dataKey - The key for the data to display.
+ */
 const appendItem = (item, timeframeType, dataKey) => {
+  /** Maps the timeframe to the corresponding "previous" period's label. */
   const previousTextMap = new Map([
+    // [timeframeType, previousPeriodText]
     ["daily", "Yesterday"],
     ["weekly", "Last Week"],
     ["monthly", "Last Month"],
@@ -38,9 +52,14 @@ const appendItem = (item, timeframeType, dataKey) => {
   }
 };
 
-// Populate DOM Function
+/**
+ * Populates the entire dashboard based on the selected timeframe.
+ * It first hides all time-related elements, then selectively un-hides and
+ * populates the ones for the chosen timeframe.
+ * @param {Array<object>} data - The full array of activity data from data.json.
+ * @param {string} selectedTimeframe - The timeframe to display ('daily', 'weekly', 'monthly').
+ */
 const populateDOM = (data, selectedTimeframe) => {
-  // Hide all current and previous elements first
   document
     .querySelectorAll('[class*="-current"], [class*="-previous"]')
     .forEach((el) => {
@@ -71,7 +90,7 @@ const populateDOM = (data, selectedTimeframe) => {
   });
 };
 
-/* Use fetch to retrieve data from .json */
+// Use the Fetch API to retrieve data from the JSON file.
 fetch(jsonData)
   .then((response) => {
     if (!response.ok) {
@@ -80,7 +99,7 @@ fetch(jsonData)
     return response.json();
   })
   .then((data) => {
-    // Initial population with weekly data
+    // Populate dashboard with weekly data on initial load.
     populateDOM(data, "weekly");
 
     // Add event listeners to navigation links
