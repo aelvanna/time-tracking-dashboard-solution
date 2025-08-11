@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,36 +10,36 @@
   </head>
 
   <body
-    class="box-border min-h-screen bg-navy-950 font-rubik text-white font-light z-0 flex flex-col items-center justify-center"
+    class="z-0 box-border flex min-h-screen flex-col items-center justify-center bg-navy-950 font-rubik font-light text-white"
   >
     <main
-      class="container py-12 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(4,_minmax(auto,_230px))] lg:grid-rows-[repeat(2,_220px)] lg:w-fit gap-5 lg:gap-7 lg:gap-y-8"
+      class="container grid grid-cols-1 gap-5 px-6 py-12 md:grid-cols-2 lg:w-fit lg:grid-cols-[repeat(4,_minmax(auto,_230px))] lg:grid-rows-[repeat(2,_220px)] lg:gap-7 lg:gap-y-8"
     >
       <article
-        class="card-main relative md:col-span-2 lg:row-span-2 lg:col-span-1 h-full flex flex-col"
+        class="card-main relative flex h-full flex-col md:col-span-2 lg:col-span-1 lg:row-span-2"
       >
         <header
-          class="card__header relative z-10 grid grid-cols-[auto_1fr] gap-x-4 bg-purple-600 rounded-2xl pl-7 pt-7 pb-7 lg:pb-18"
+          class="card__header relative z-10 grid grid-cols-[auto_1fr] gap-x-4 rounded-2xl bg-purple-600 pt-7 pb-7 pl-7 lg:pb-18"
         >
           <img
-            class="col-start-1 row-start-1 row-end-3 border-solid border-white border-3 rounded-full self-center w-18 h-18"
+            class="col-start-1 row-start-1 row-end-3 h-18 w-18 self-center rounded-full border-3 border-solid border-white"
             src="/images/image-jeremy.png"
             alt="Profile Picture of Jeremy Robson"
           />
 
           <h4
-            class="col-start-2 lg:col-start-1 lg:pt-9 lg:pb-2 text-md text-navy-200 font-normal self-center"
+            class="text-md col-start-2 self-center font-normal text-navy-200 lg:col-start-1 lg:pt-9 lg:pb-2"
           >
             Report for
           </h4>
           <h1
-            class="col-start-2 lg:col-start-1 text-2xl lg:text-4xl font-light self-start"
+            class="col-start-2 self-start text-2xl font-light lg:col-start-1 lg:text-4xl"
           >
             Jeremy Robson
           </h1>
         </header>
         <nav
-          class="card__nav text-lg text-purple-500 flex flex-row justify-around lg:grid lg:justify-start gap-y-3 bg-navy-900 rounded-2xl -mt-4 px-6 pb-6 pt-10"
+          class="card__nav -mt-4 flex flex-row justify-around gap-y-3 rounded-2xl bg-navy-900 px-6 pt-10 pb-6 text-lg text-purple-500 lg:grid lg:justify-start"
         >
           <a href="#">Daily</a>
           <a href="#" class="font-light text-white">Weekly</a>
@@ -48,43 +48,43 @@
       </article>
       <article class="card-work relative h-full">
         <header
-          class="w-full h-[3.25rem] z-1 bg-orange-300 bg-[url(/images/icon-work.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl"
+          class="z-1 h-[3.25rem] w-full rounded-t-2xl bg-orange-300 bg-[url(/images/icon-work.svg)] bg-[position:right_1rem_top_-0.5rem] bg-no-repeat"
         >
           <!-- Header Image -->
         </header>
         <section
-          class="card-work__body grid grid-cols-2 grid-rows-auto lg:grid lg:grid-cols-1 lg:h-auto lg:gap-y-4 lg:pb-7 relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1.5rem_top_2rem] rounded-2xl"
+          class="card-work__body grid-rows-auto relative z-10 -mt-4 grid h-28 w-full grid-cols-2 rounded-2xl bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-[position:right_1.5rem_top_2rem] bg-no-repeat p-6 lg:grid lg:h-auto lg:grid-cols-1 lg:gap-y-4 lg:pb-7"
         >
-          <h4 class="text-lg lg:text-md lg:pb-2 font-medium" id="title__work">
+          <h4 class="lg:text-md text-lg font-medium lg:pb-2" id="title__work">
             Work
           </h4>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center daily-work-current"
+            class="daily-work-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- daily-->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start daily-work-previous hidden"
+            class="daily-work-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center weekly-work-current"
+            class="weekly-work-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-sm text-navy-200 self-center lg:self-start justify-self-end lg:justify-self-start weekly-work-previous"
+            class="weekly-work-previous self-center justify-self-end text-sm text-navy-200 lg:self-start lg:justify-self-start"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center monthly-work-current hidden"
+            class="monthly-work-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- monthly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start monthly-work-previous hidden"
+            class="monthly-work-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- monthly -->
           </p>
@@ -92,43 +92,43 @@
       </article>
       <article class="card-play relative h-full">
         <header
-          class="w-full h-[3.25rem] z-1 bg-blue-300 bg-[url(/images/icon-play.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl"
+          class="z-1 h-[3.25rem] w-full rounded-t-2xl bg-blue-300 bg-[url(/images/icon-play.svg)] bg-[position:right_1rem_top_-0.5rem] bg-no-repeat"
         >
           <!-- Header Image -->
         </header>
         <section
-          class="card-play__body grid grid-cols-1 grid-rows-auto lg:grid lg:grid-cols-1 lg:gap-y-4 lg:pb-7 relative p-6 -mt-4 h-28 lg:h-auto w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1.5rem_top_2rem] rounded-2xl"
+          class="card-play__body grid-rows-auto relative z-10 -mt-4 grid h-28 w-full grid-cols-1 rounded-2xl bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-[position:right_1.5rem_top_2rem] bg-no-repeat p-6 lg:grid lg:h-auto lg:grid-cols-1 lg:gap-y-4 lg:pb-7"
         >
-          <h4 class="text-lg lg:text-md font-medium lg:pb-2" id="title__play">
+          <h4 class="lg:text-md text-lg font-medium lg:pb-2" id="title__play">
             Play
           </h4>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center daily-play-current hidden"
+            class="daily-play-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start daily-play-previous hidden"
+            class="daily-play-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center weekly-play-current"
+            class="weekly-play-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start weekly-play-previous"
+            class="weekly-play-previous col-start-2 self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center monthly-play-current hidden"
+            class="monthly-play-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- monthly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end hidden lg:col-start-1 lg:justify-self-start monthly-play-previous"
+            class="monthly-play-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- monthly -->
           </p>
@@ -136,182 +136,182 @@
       </article>
       <article class="card-study relative h-full">
         <header
-          class="w-full h-[3.25rem] z-1 bg-pink-400 bg-[url(/images/icon-study.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl"
+          class="z-1 h-[3.25rem] w-full rounded-t-2xl bg-pink-400 bg-[url(/images/icon-study.svg)] bg-[position:right_1rem_top_-0.5rem] bg-no-repeat"
         >
           <!-- Header Image -->
         </header>
         <section
-          class="card-study__body grid grid-cols-1 grid-rows-auto lg:grid lg:grid-cols-1 lg:h-auto lg:gap-y-4 lg:pb-7 relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1.5rem_top_2rem] rounded-2xl"
+          class="card-study__body grid-rows-auto relative z-10 -mt-4 grid h-28 w-full grid-cols-1 rounded-2xl bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-[position:right_1.5rem_top_2rem] bg-no-repeat p-6 lg:grid lg:h-auto lg:grid-cols-1 lg:gap-y-4 lg:pb-7"
         >
-          <h4 class="text-lg lg:text-md font-medium lg:pb-2" id="title__study">
+          <h4 class="lg:text-md text-lg font-medium lg:pb-2" id="title__study">
             Study
           </h4>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center daily-study-current hidden"
+            class="daily-study-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start daily-study-previous hidden"
+            class="daily-study-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center weekly-study-current"
+            class="weekly-study-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start weekly-study-previous"
+            class="weekly-study-previous col-start-2 self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center monthly-study-current hidden"
+            class="monthly-study-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- monthly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start monthly-study-previous hidden"
+            class="monthly-study-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- monthly -->
           </p>
         </section>
       </article>
-      <article class="card-exercise relative lg:col-start-2 h-full">
+      <article class="card-exercise relative h-full lg:col-start-2">
         <header
-          class="w-full h-[3.25rem] z-1 bg-green-400 bg-[url(/images/icon-exercise.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl"
+          class="z-1 h-[3.25rem] w-full rounded-t-2xl bg-green-400 bg-[url(/images/icon-exercise.svg)] bg-[position:right_1rem_top_-0.5rem] bg-no-repeat"
         >
           <!-- Header Image -->
         </header>
         <section
-          class="card-exercise__body grid grid-cols-1 grid-rows-auto lg:grid lg:grid-cols-1 lg:h-auto lg:gap-y-4 lg:pb-7 relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1.5rem_top_2rem] rounded-2xl"
+          class="card-exercise__body grid-rows-auto relative z-10 -mt-4 grid h-28 w-full grid-cols-1 rounded-2xl bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-[position:right_1.5rem_top_2rem] bg-no-repeat p-6 lg:grid lg:h-auto lg:grid-cols-1 lg:gap-y-4 lg:pb-7"
         >
           <h4
-            class="text-lg lg:text-md font-medium lg:pb-2"
+            class="lg:text-md text-lg font-medium lg:pb-2"
             id="title__exercise"
           >
             Exercise
           </h4>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center daily-exercise-current hidden"
+            class="daily-exercise-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start daily-exercise-previous hidden"
+            class="daily-exercise-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center weekly-exercise-current"
+            class="weekly-exercise-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 weekly-exercise-previous justify-self-end self-center lg:col-start-1 lg:justify-self-start"
+            class="weekly-exercise-previous col-start-2 self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- weekly -->
           </p>
 
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center monthly-exercise-current hidden"
+            class="monthly-exercise-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- monthly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start monthly-exercise-previous hidden"
+            class="monthly-exercise-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- monthly -->
           </p>
         </section>
       </article>
-      <article class="card-social relative lg:col-start-3 h-full">
+      <article class="card-social relative h-full lg:col-start-3">
         <header
-          class="w-full h-[3.25rem] z-1 bg-purple-700 bg-[url(/images/icon-social.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl"
+          class="z-1 h-[3.25rem] w-full rounded-t-2xl bg-purple-700 bg-[url(/images/icon-social.svg)] bg-[position:right_1rem_top_-0.5rem] bg-no-repeat"
         >
           <!-- Header Image-->
         </header>
         <section
-          class="card-social__body grid grid-cols-1 grid-rows-auto lg:grid lg:grid-cols-1 lg:h-auto lg:gap-y-4 lg:pb-7 relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1.5rem_top_2rem] rounded-2xl"
+          class="card-social__body grid-rows-auto relative z-10 -mt-4 grid h-28 w-full grid-cols-1 rounded-2xl bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-[position:right_1.5rem_top_2rem] bg-no-repeat p-6 lg:grid lg:h-auto lg:grid-cols-1 lg:gap-y-4 lg:pb-7"
         >
-          <h4 class="text-lg lg:text-md font-medium lg:pb-2" id="title__social">
+          <h4 class="lg:text-md text-lg font-medium lg:pb-2" id="title__social">
             Social
           </h4>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center daily-social-current hidden"
+            class="daily-social-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start daily-social-previous hidden"
+            class="daily-social-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center weekly-social-current"
+            class="weekly-social-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start weekly-social-previous"
+            class="weekly-social-previous col-start-2 self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center monthly-social-current hidden"
+            class="monthly-social-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- monthly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start monthly-social-previous hidden"
+            class="monthly-social-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- monthly -->
           </p>
         </section>
       </article>
-      <article class="card-self-care relative lg:col-start-4 h-full">
+      <article class="card-self-care relative h-full lg:col-start-4">
         <header
-          class="card-self-care__header w-full h-[3.25rem] z-1 bg-yellow-300 bg-[url(/images/icon-self-care.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem] rounded-t-2xl"
+          class="card-self-care__header z-1 h-[3.25rem] w-full rounded-t-2xl bg-yellow-300 bg-[url(/images/icon-self-care.svg)] bg-[position:right_1rem_top_-0.5rem] bg-no-repeat"
         >
           <!-- Header Image -->
         </header>
         <section
-          class="card-self-care__body grid grid-cols-1 grid-rows-auto lg:grid lg:grid-cols-1 lg:h-auto lg:gap-y-4 lg:pb-7 relative p-6 -mt-4 h-28 w-full z-10 bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-no-repeat bg-[position:right_1.5rem_top_2rem] rounded-2xl"
+          class="card-self-care__body grid-rows-auto relative z-10 -mt-4 grid h-28 w-full grid-cols-1 rounded-2xl bg-navy-900 bg-[url(/images/icon-ellipsis.svg)] bg-[position:right_1.5rem_top_2rem] bg-no-repeat p-6 lg:grid lg:h-auto lg:grid-cols-1 lg:gap-y-4 lg:pb-7"
         >
           <h4
-            class="text-lg lg:text-md font-medium lg:pb-2"
+            class="lg:text-md text-lg font-medium lg:pb-2"
             id="title__self-care"
           >
             Self Care
           </h4>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center daily-self-care-current hidden"
+            class="daily-self-care-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start daily-self-care-previous hidden"
+            class="daily-self-care-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- daily -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center weekly-self-care-current"
+            class="weekly-self-care-current col-start-1 text-3xl lg:self-center lg:text-5xl"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start weekly-self-care-previous"
+            class="weekly-self-care-previous col-start-2 self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- weekly -->
           </p>
           <p
-            class="text-3xl col-start-1 lg:text-5xl lg:self-center monthly-self-care-current hidden"
+            class="monthly-self-care-current col-start-1 hidden text-3xl lg:self-center lg:text-5xl"
           >
             <!-- monthly -->
           </p>
           <p
-            class="text-sm text-navy-200 col-start-2 self-center justify-self-end lg:col-start-1 lg:justify-self-start monthly-self-care-previous hidden"
+            class="monthly-self-care-previous col-start-2 hidden self-center justify-self-end text-sm text-navy-200 lg:col-start-1 lg:justify-self-start"
           >
             <!-- monthly -->
           </p>

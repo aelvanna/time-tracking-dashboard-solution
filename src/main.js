@@ -71,7 +71,7 @@ const populateDOM = (data, selectedTimeframe) => {
     if (baseClassName) {
       // Show and populate current data for the selected timeframe
       const currentElement = document.querySelector(
-        `.${selectedTimeframe}-${baseClassName}-current`
+        `.${selectedTimeframe}-${baseClassName}-current`,
       );
       if (currentElement) {
         currentElement.classList.remove("hidden");
@@ -80,7 +80,7 @@ const populateDOM = (data, selectedTimeframe) => {
 
       // Show and populate previous data for the selected timeframe
       const previousElement = document.querySelector(
-        `.${selectedTimeframe}-${baseClassName}-previous`
+        `.${selectedTimeframe}-${baseClassName}-previous`,
       );
       if (previousElement) {
         previousElement.classList.remove("hidden");
